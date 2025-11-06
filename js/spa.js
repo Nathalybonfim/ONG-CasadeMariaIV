@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
     content.innerHTML = html;
     content.focus();
     setActive(key);
-    attachFormHandlers(); // Reativa formulários carregados dinamicamente
+    attachFormHandlers();
   }
 
   links.forEach(a => {
@@ -48,7 +48,6 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   render('index');
-
   const ano = new Date().getFullYear();
   document.getElementById('anoAtual').textContent = ano;
 });
