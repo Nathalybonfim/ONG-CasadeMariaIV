@@ -80,7 +80,7 @@ Ferramentas de Acessibilidade: Lighthouse, WAVE, Contrast Checker
 # 🖼️ Demonstração Visual
 
 ![Uploading ](imagens/visualizacaoI.png)
-![Uploading ](imagens/visualizacaoII.png
+![Uploading ](imagens/visualizacaoII.png)
 
 # 👩‍💻 Autora
 Nathaly Bonfim — Desenvolvedora Front-End
