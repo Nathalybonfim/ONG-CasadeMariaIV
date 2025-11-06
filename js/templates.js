@@ -19,6 +19,11 @@ function renderProjects(){
         <p>Oferece apoio a famílias em situação de vulnerabilidade social, com doações e acolhimento.</p>
       </div>
       <div class="card">
+        <img src="./imagens/tampinhas.png" alt="Projeto Tampinhas que Curam">
+        <h3>Projeto Tampinhas que Curam</h3>
+        <p>Rcebemos e juntamos tampinhas de garrafa PET para trocar por cadeiras de roda, para idosos com dificuldade na mobilidade e também deficientes físicos em vulnerabilidade social.</p>
+      </div>
+      <div class="card">
         <img src="./imagens/psi.png" alt="Projeto Educar">
         <h3>Projeto Educar</h3>
         <p>Promove oficinas de reforço escolar e desenvolvimento pessoal para crianças e adolescentes.</p>
@@ -93,6 +98,7 @@ function renderContact(){
   </section>
   `;
 }
+
 
 
 
