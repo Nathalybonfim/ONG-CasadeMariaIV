@@ -1,5 +1,3 @@
-/* spa.js - controlador SPA simples e acessível */
-
 document.addEventListener('DOMContentLoaded', function(){
   const links = document.querySelectorAll('[data-link]');
   const content = document.getElementById('content');
@@ -7,7 +5,9 @@ document.addEventListener('DOMContentLoaded', function(){
   const navList = document.getElementById('navList');
 
   function setActive(linkKey){
-    document.querySelectorAll('[data-link]').forEach(a => a.classList.toggle('active', a.getAttribute('data-link') === linkKey));
+    document.querySelectorAll('[data-link]').forEach(a =>
+      a.classList.toggle('active', a.getAttribute('data-link') === linkKey)
+    );
   }
 
   function render(key){
@@ -25,22 +25,19 @@ document.addEventListener('DOMContentLoaded', function(){
     content.innerHTML = html;
     content.focus();
     setActive(key);
-    attachFormHandlers(); // re-avalia formulários carregados dinamicamente
+    attachFormHandlers(); // Reativa formulários carregados dinamicamente
   }
 
-  // clique nos links
   links.forEach(a => {
     a.addEventListener('click', function(e){
       e.preventDefault();
       const key = this.getAttribute('data-link');
       render(key);
-      // fechar menu em mobile
       if(window.innerWidth <= 840 && navList) navList.style.display = 'none';
       if(navToggle) navToggle.setAttribute('aria-expanded','false');
     });
   });
 
-  // nav toggle (mobile)
   if(navToggle){
     navToggle.addEventListener('click', function(){
       const expanded = this.getAttribute('aria-expanded') === 'true';
@@ -50,10 +47,8 @@ document.addEventListener('DOMContentLoaded', function(){
     });
   }
 
-  // inicial
   render('index');
 
-  // atualiza ano rodapé
   const ano = new Date().getFullYear();
   document.getElementById('anoAtual').textContent = ano;
 });
