@@ -1,67 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Casa de Maria - ONG dedicada a projetos sociais, voluntariado e apoio comunitário." />
   <title>ONG Casa de Maria</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- Estilo principal -->
+  <link rel="stylesheet" href="./css/style.min.css" />
+
+  <!-- Acessibilidade e SEO -->
+  <link rel="shortcut icon" href="./imagens/logo.png" type="image/png" />
 </head>
-  
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <img src="imagens/logo.jpg" alt="Logo da ONG Casa de Maria" class="logo" id="topLogo">
-        <div class="brand-text">
-          <h1>Casa de Maria</h1>
-          <p class="tag">Amor, caridade e solidariedade</p>
-        </div>
-      </div>
+  <header>
+    <img src="./imagens/logo.png" alt="Logo da Casa de Maria" width="90" height="90" />
+    <h1>Casa de Maria</h1>
 
-      <nav class="main-nav" aria-label="Menu principal">
-        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir ou fechar menu de navegação">☰</button>
-        <ul class="nav-list" id="navList">
-          <li><a href="#" data-link="index">Início</a></li>
-          <li><a href="#" data-link="projetos">Projetos</a></li>
-          <li><a href="#" data-link="depoimentos">Depoimentos</a></li>
-          <li><a href="#" data-link="doacoes">Doações</a></li>
-          <li><a href="#" data-link="cadastro">Seja um voluntário</a></li>
-          <li><a href="#" data-link="galeria">Galeria</a></li>
-          <li><a href="#" data-link="contato">Contato</a></li>
-        </ul>
-      </nav>
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#" data-link="inicio">Início</a></li>
+        <li><a href="#" data-link="projetos">Projetos</a></li>
+        <li><a href="#" data-link="depoimentos">Depoimentos</a></li>
+        <li><a href="#" data-link="doacoes">Doações</a></li>
+        <li><a href="#" data-link="voluntario">Seja um Voluntário</a></li>
+        <li><a href="#" data-link="galeria">Galeria</a></li>
+        <li><a href="#" data-link="contato">Contato</a></li>
+      </ul>
+    </nav>
 
-      <button id="toggleTheme" class="contrast-toggle" aria-label="Alternar modo escuro e claro">🌙</button>
+    <div class="acessibilidade">
+      <button id="toggle-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
+      <button id="toggle-dark" aria-label="Ativar modo escuro">Modo Escuro</button>
     </div>
   </header>
 
-  <main id="content" class="container" tabindex="-1" role="main"></main>
+  <main id="content" tabindex="-1" aria-live="polite">
+    <!-- Conteúdo SPA carregado dinamicamente -->
+  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>Casa de Maria</strong> — &copy; Todos os direitos reservados.
-      </div>
-      <div class="footer-actions">
-        <a href="#" data-link="cadastro" class="btn btn-ghost">Quero ajudar</a>
-        <a href="#" data-link="doacoes" class="btn btn-outline">Doar</a>
-      </div>
-    </div>
+  <footer>
+    <p>© 2025 Casa de Maria — Todos os direitos reservados.</p>
   </footer>
-  
-<script src="./js/templates.js"></script>
-<script src="./js/spa.js"></script>
-<script src="./js/form.js"></script>
-<script src="./js/main.min.js"></script> 
-  <script>
-    const toggleTheme = document.getElementById('toggleTheme');
-    toggleTheme.addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      toggleTheme.setAttribute('aria-label', isDark ? 'Ativar modo claro' : 'Ativar modo escuro');
-    });
-  </script>
+
+  <!-- Scripts -->
+  <script src="./js/templates.js"></script>
+  <script src="./js/spa.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>
-
