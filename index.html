@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ONG Casa de Maria</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="imagens/logo.jpg" alt="Logo da ONG Casa de Maria" class="logo" id="topLogo">
+        <div class="brand-text">
+          <h1>Casa de Maria</h1>
+          <p class="tag">Amor, caridade e solidariedade</p>
+        </div>
+      </div>
+
+      <nav class="main-nav" aria-label="Menu principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir ou fechar menu de navegação">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#" data-link="index">Início</a></li>
+          <li><a href="#" data-link="projetos">Projetos</a></li>
+          <li><a href="#" data-link="depoimentos">Depoimentos</a></li>
+          <li><a href="#" data-link="doacoes">Doações</a></li>
+          <li><a href="#" data-link="cadastro">Seja um voluntário</a></li>
+          <li><a href="#" data-link="galeria">Galeria</a></li>
+          <li><a href="#" data-link="contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button id="toggleTheme" class="contrast-toggle" aria-label="Alternar modo escuro e claro">🌙</button>
+    </div>
+  </header>
+
+  <main id="content" class="container" tabindex="-1" role="main"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Casa de Maria</strong> — &copy; Todos os direitos reservados.
+      </div>
+      <div class="footer-actions">
+        <a href="#" data-link="cadastro" class="btn btn-ghost">Quero ajudar</a>
+        <a href="#" data-link="doacoes" class="btn btn-outline">Doar</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/templates.min.js"></script>
+  <script src="js/form.min.js"></script>
+  <script src="js/spa.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script>
+    const toggleTheme = document.getElementById('toggleTheme');
+    toggleTheme.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      toggleTheme.setAttribute('aria-label', isDark ? 'Ativar modo claro' : 'Ativar modo escuro');
+    });
+  </script>
+</body>
+</html>
