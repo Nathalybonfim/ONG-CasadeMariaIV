@@ -19,7 +19,7 @@ function renderProjects(){
         <p>Oferece apoio a famílias em situação de vulnerabilidade social, com doações e acolhimento.</p>
       </div>
       <div class="card">
-        <img src="./imagens/psi.jpg" alt="Projeto Educar">
+        <img src="./imagens/psi.png" alt="Projeto Educar">
         <h3>Projeto Educar</h3>
         <p>Promove oficinas de reforço escolar e desenvolvimento pessoal para crianças e adolescentes.</p>
       </div>
@@ -76,8 +76,8 @@ function renderGallery(){
     <h2>Galeria</h2>
     <div class="grid">
       <img src="./imagens/voluntarios.jpg" alt="Ação solidária 1">
-      <img src="./imagens/lar.jpg" alt="Ação solidária 2">
-      <img src="./imagens/tampinhas.jpg" alt="Ação solidária 3">
+      <img src="./imagens/lar.png" alt="Ação solidária 2">
+      <img src="./imagens/tampinhas.png" alt="Ação solidária 3">
     </div>
   </section>
   `;
@@ -93,6 +93,7 @@ function renderContact(){
   </section>
   `;
 }
+
 
 
 
