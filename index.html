@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>ONG · Casa de Maria</title>
   <meta name="description" content="Casa de Maria — projetos sociais, voluntariado e doações. Acessível conforme WCAG 2.1 AA.">
+  
+  <!-- Fonte -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
   <a class="skip-link" href="#content">Ir para o conteúdo</a>
@@ -14,7 +18,7 @@
   <header class="site-header" role="banner">
     <div class="container header-inner">
       <div class="brand" role="img" aria-label="Logotipo Casa de Maria">
-        <img src="imagens/logo.jpg" alt="Logotipo Casa de Maria" class="logo">
+        <img src="./imagens/logo.jpg" alt="Logotipo Casa de Maria" class="logo">
         <div class="brand-text">
           <h1 class="brand-title">Casa de Maria</h1>
           <p class="tag">Amor, caridade e solidariedade</p>
@@ -36,9 +40,30 @@
     </div>
   </header>
 
-  <main id="content" class="container" tabindex="-1" role="main" aria-live="polite"></main>
+  <main id="content" class="container" tabindex="-1" role="main" aria-live="polite">
+    <!-- Conteúdo SPA carregado dinamicamente -->
+  </main>
 
   <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <strong>Casa de Maria</strong> — &copy; <span id="anoAtual"></span>. Todos os direitos reservados.
+      </div>
+      <div class="footer-actions">
+        <button id="contrastToggle" class="btn btn-ghost" aria-pressed="false" aria-label="Ativar alto contraste">Alto Contraste</button>
+        <a href="#cadastro" data-link="cadastro" class="btn btn-outline">Quero Ajudar</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./js/templates.js"></script>
+  <script src="./js/spa.js"></script>
+  <script src="./js/form.js"></script>
+  <script src="./js/main.min.js"></script>
+</body>
+</html>
+
     <div class="container footer-inner">
       <div>
         <strong>Casa de Maria</strong> — &copy; <span id="anoAtual"></span>. Todos os direitos reservados.
@@ -57,3 +82,4 @@
 
 </body>
 </html>
+
