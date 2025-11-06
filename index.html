@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casa de Maria - ONG dedicada a projetos sociais, voluntariado e apoio comunitário." />
-  <title>ONG Casa de Maria</title>
-
-  <!-- Estilo principal -->
-  <link rel="stylesheet" href="./css/style.min.css" />
-
-  <!-- Acessibilidade e SEO -->
-  <link rel="shortcut icon" href="./imagens/logo.png" type="image/png" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ONG · Casa de Maria</title>
+  <meta name="description" content="Casa de Maria — projetos sociais, voluntariado e doações. Acessível conforme WCAG 2.1 AA.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <header>
-    <img src="./imagens/logo.png" alt="Logo da Casa de Maria" width="90" height="90" />
-    <h1>Casa de Maria</h1>
+  <a class="skip-link" href="#content">Ir para o conteúdo</a>
 
-    <nav aria-label="Menu principal">
-      <ul>
-        <li><a href="#" data-link="inicio">Início</a></li>
-        <li><a href="#" data-link="projetos">Projetos</a></li>
-        <li><a href="#" data-link="depoimentos">Depoimentos</a></li>
-        <li><a href="#" data-link="doacoes">Doações</a></li>
-        <li><a href="#" data-link="voluntario">Seja um Voluntário</a></li>
-        <li><a href="#" data-link="galeria">Galeria</a></li>
-        <li><a href="#" data-link="contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand" role="img" aria-label="Logotipo Casa de Maria">
+        <img src="imagens/logo.jpg" alt="Logotipo Casa de Maria" class="logo">
+        <div class="brand-text">
+          <h1 class="brand-title">Casa de Maria</h1>
+          <p class="tag">Amor, caridade e solidariedade</p>
+        </div>
+      </div>
 
-    <div class="acessibilidade">
-      <button id="toggle-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
-      <button id="toggle-dark" aria-label="Ativar modo escuro">Modo Escuro</button>
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir menu">☰</button>
+        <ul class="nav-list" id="navList">
+          <li><a href="#" data-link="index">INÍCIO</a></li>
+          <li><a href="#" data-link="projetos">PROJETOS</a></li>
+          <li><a href="#" data-link="depoimentos">DEPOIMENTOS</a></li>
+          <li><a href="#" data-link="doacoes">DOAÇÕES</a></li>
+          <li><a href="#" data-link="cadastro">SEJA UM VOLUNTÁRIO</a></li>
+          <li><a href="#" data-link="galeria">GALERIA</a></li>
+          <li><a href="#" data-link="contato">CONTATO</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main id="content" tabindex="-1" aria-live="polite">
-    <!-- Conteúdo SPA carregado dinamicamente -->
-  </main>
+  <main id="content" class="container" tabindex="-1" role="main" aria-live="polite"></main>
 
-  <footer>
-    <p>© 2025 Casa de Maria — Todos os direitos reservados.</p>
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div>
+        <strong>Casa de Maria</strong> — &copy; <span id="anoAtual"></span>. Todos os direitos reservados.
+      </div>
+      <div class="footer-actions">
+        <button id="contrastToggle" class="btn btn-ghost" aria-pressed="false" aria-label="Ativar alto contraste">Alto Contraste</button>
+        <a href="#cadastro" data-link="cadastro" class="btn btn-outline">Quero Ajudar</a>
+      </div>
+    </div>
   </footer>
 
-  <!-- Scripts -->
-  <script src="./js/templates.js"></script>
-  <script src="./js/spa.js"></script>
-  <script src="./js/form.js"></script>
-  <script src="./js/main.min.js"></script>
+<script src="./js/templates.js"></script>
+<script src="./js/spa.js"></script>
+<script src="./js/form.js"></script>
+<script src="./js/main.min.js"></script>
+
 </body>
 </html>
