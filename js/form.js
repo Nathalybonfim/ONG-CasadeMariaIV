@@ -36,4 +36,18 @@
   }
 
   window.attachFormHandlers = attachFormHandlers;
+
+  // Modal de depoimento
+  const abrir = document.getElementById('abrirFormularioDepoimento');
+  const fechar = document.getElementById('fecharModalDepoimento');
+  const modal = document.getElementById('modalDepoimento');
+
+if (abrir && fechar && modal) {
+  abrir.addEventListener('click', () => modal.classList.add('ativo'));
+  fechar.addEventListener('click', () => modal.classList.remove('ativo'));
+  modal.addEventListener('click', e => {
+    if (e.target === modal) modal.classList.remove('ativo');
+  });
+}
+
 })();
