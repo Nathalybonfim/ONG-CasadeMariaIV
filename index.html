@@ -28,30 +28,51 @@
       <nav class="main-nav" role="navigation" aria-label="Menu principal">
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navList" aria-label="Abrir menu">☰</button>
         <ul class="nav-list" id="navList">
-          <li><a href="#" data-link="index">INÍCIO</a></li>
-          <li><a href="#" data-link="projetos">PROJETOS</a></li>
-          <li><a href="#" data-link="depoimentos">DEPOIMENTOS</a></li>
-          <li><a href="#" data-link="doacoes">DOAÇÕES</a></li>
-          <li><a href="#" data-link="cadastro">SEJA UM VOLUNTÁRIO</a></li>
-          <li><a href="#" data-link="galeria">GALERIA</a></li>
-          <li><a href="#" data-link="contato">CONTATO</a></li>
+          <li><a href="#" data-link="index" class="active">Início</a></li>
+          <li><a href="#" data-link="projetos">Projetos</a></li>
+          <li><a href="#" data-link="depoimentos">Depoimentos</a></li>
+          <li><a href="#" data-link="doacoes">Doações</a></li>
+          <li><a href="#" data-link="cadastro">Voluntário</a></li>
+          <li><a href="#" data-link="galeria">Galeria</a></li>
+          <li><a href="#" data-link="contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <!-- Hero Section -->
+  <section class="hero" role="region" aria-label="Apresentação Casa de Maria">
+    <div class="container hero-inner">
+      <h2 class="hero-title">Transformando vidas com amor e solidariedade 💛</h2>
+      <p class="hero-text">A Casa de Maria apoia famílias em situação de vulnerabilidade com doações, acolhimento e esperança. Junte-se a nós nessa corrente de amor!</p>
+      <a href="#" data-link="doacoes" class="btn btn-primary">Fazer uma Doação</a>
+    </div>
+  </section>
+
   <main id="content" class="container" tabindex="-1" role="main" aria-live="polite">
     <!-- Conteúdo SPA carregado dinamicamente -->
   </main>
 
+  <!-- Destaque de impacto -->
+  <section class="impacto" aria-label="Resultados e impacto social">
+    <div class="container impacto-inner">
+      <h3 class="impacto-title">Nosso impacto</h3>
+      <ul class="impacto-list">
+        <li><strong>31+</strong> famílias apoiadas por mês</li>
+        <li><strong>20+</strong> voluntários ativos</li>
+        <li><strong>100%</strong> dedicação e amor</li>
+      </ul>
+    </div>
+  </section>
+
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-inner">
-      <div>
+      <div class="footer-brand">
         <strong>Casa de Maria</strong> — &copy; <span id="anoAtual"></span>. Todos os direitos reservados.
       </div>
       <div class="footer-actions">
         <button id="contrastToggle" class="btn btn-ghost" aria-pressed="false" aria-label="Ativar alto contraste">Alto Contraste</button>
-        <a href="#cadastro" data-link="cadastro" class="btn btn-outline">Quero Ajudar</a>
+        <a href="#" data-link="cadastro" class="btn btn-outline">Quero Ajudar</a>
       </div>
     </div>
   </footer>
